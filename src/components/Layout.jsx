@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Header from './Header'
+import NotificationSystem from './NotificationSystem'
 
 function Layout({ children }) {
   return (
@@ -14,6 +15,7 @@ function Layout({ children }) {
           </div>
         </main>
       </div>
+      <NotificationSystem />
     </div>
   )
 }
