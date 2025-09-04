@@ -1,0 +1,24 @@
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Dashboard from './pages/Dashboard'
+import Workflows from './pages/Workflows'
+import Integrations from './pages/Integrations'
+import CRMRecords from './pages/CRMRecords'
+import Settings from './pages/Settings'
+
+function App() {
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/workflows" element={<Workflows />} />
+        <Route path="/integrations" element={<Integrations />} />
+        <Route path="/crm" element={<CRMRecords />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </Layout>
+  )
+}
+
+export default App
